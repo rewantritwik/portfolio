@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Rewant Ritwik – Portfolio of a full-stack CSE undergraduate building web applications with React, Node.js, and MongoDB." />
+  <meta name="keywords"
+    content="Rewant Ritwik, Portfolio, CSE, Full-stack Developer, React, Node.js, Express, MongoDB, Web Development, Software Internship" />
+  <meta name="author" content="Rewant Ritwik" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Rewant Ritwik | Portfolio" />
+  <meta property="og:description"
+    content="Full-stack CSE undergraduate building scalable, production-ready web apps with React, Node.js, and MongoDB." />
+  <meta property="og:image" content="26.jpg" />
+  <meta property="og:type" content="website" />
+
+  <title>Rewant Ritwik | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="nav">
+    <div class="container navInner">
+
+      <!-- Social Icons -->
+      <div class="socialIcons">
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/rewant2005/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+          <img src="https://cdn.simpleicons.org/leetcode" alt="LeetCode" width="24" height="24">
+        </a>
+
+        <!-- GeeksforGeeks -->
+        <a href="https://www.geeksforgeeks.org/user/rewantlwep/" target="_blank" rel="noopener noreferrer"
+          aria-label="GeeksforGeeks">
+          <img src="https://cdn.simpleicons.org/geeksforgeeks" alt="GeeksforGeeks" width="24" height="24">
+        </a>
+
+      </div>
+
+      <!-- Navigation -->
+      <div class="navControls">
+        <nav class="navLinks" aria-label="Primary Navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+
+        </nav>
+      </div>
+
+
+
+      <!-- Dark / Light Theme Toggle -->
+      <button class="themeToggle" id="themeToggle" aria-label="Toggle Theme" title="Toggle dark/light theme">
+        <!-- Sun Icon (shown in dark mode) -->
+        <svg class="sunIcon" viewBox="0 0 24 24" style="display:none;">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Moon Icon (shown in light mode) -->
+        <svg class="moonIcon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- Hamburger for Mobile -->
+      <button class="hamburger" id="menuBtn" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    </div>
+
+
+  </header>
+
+  <!-- HERO SECTION -->
+  <main id="home" class="hero">
+    <div class="container">
+      <div class="heroGrid">
+
+        <!-- Left: Headline & Intro -->
+        <section class="reveal">
+          <span class="eyebrow"><span class="dot"></span> Available for internships &amp; collaborations</span>
+          <h1 class="headline">Full‑stack CSE student building <span class="gradientText">scalable,
+              production‑ready</span> web apps.</h1>
+          <p class="subhead">I'm <b>Rewant Ritwik</b>, a Computer Science undergraduate seeking a Software Development
+            Internship, with hands‑on experience building full‑stack web applications and AI‑powered solutions using
+            React, Node.js, and MongoDB.</p>
+          <div class="chips">
+            <span class="chip">B.Tech CSE • 2024‑2028</span>
+            <span class="chip">Full‑Stack (MERN)</span>
+
+          </div>
+          <div class="heroCtas">
+            <a class="btn btnPrimary" href="#projects">Explore Projects</a>
+
+            <a class="btn" href="Rewant_Ritwik_Resume.pdf" download>Download Resume</a>
+          </div>
+        </section>
+
+        <!-- Right: Profile Card -->
+        <aside class="heroCard reveal">
+          <div class="heroCardHeader">
+            <div class="profileMini">
+              <img class="pfpImg" src="26.jpg" alt="Rewant Ritwik Avatar" />
+              <div class="pfpMeta"><b>Rewant Ritwik</b>
+                <div>Full‑Stack • CSE</div>
+              </div>
+            </div>
+            <div class="kbd">Open to internships</div>
+          </div>
+          <div class="heroProfileCenter">
+            <img class="heroBigPhoto" src="26.jpg" alt="Rewant Ritwik Profile" />
+            <h3 class="heroBigName">Rewant Ritwik</h3>
+            <p class="heroBigRole">CSE Undergrad • Full‑Stack Developer</p>
+            <div class="heroQuickLinks">
+              <button class="btn copyEmailBtn" id="copyEmailBtn" type="button"
+                style="margin-top:6px;padding:8px 24px;font-size:14px;width:100%;">Email</button>
+              <a class="btn btnPrimary" href="https://github.com/rewantritwik" target="_blank" rel="noopener">GitHub
+                ↗</a>
+              <a class="btn menuBtn" href="https://www.linkedin.com/in/rewantritwik19/" target="_blank"
+                rel="noopener">LinkedIn
+                ↗</a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="card reveal">
+        <span class="eyebrow"><span class="dot"></span> About Me</span>
+        <h2 class="secTitle">Who I am</h2>
+        <div class="twoCol">
+          <div class="innerCard">
+            <p>Computer Science undergraduate with experience building full-stack web applications using React, Node.js,
+              and MongoDB. Enjoys frontend development and is actively strengthening backend and system-design skills
+              through hands-on projects.</p>
+            <p style="margin-top:14px;">I enjoy solving algorithmic challenges on LeetCode and GeeksforGeeks, and
+              continuously expanding my skill set across the full stack — from React interfaces to Express/MongoDB
+              backends.</p>
+            <div class="rowBtns">
+              <a class="btn btnPrimary" href="Rewant_Ritwik_Resume.pdf" download>Download Resume</a>
+              <a class="btn" href="#projects">See Projects</a>
+            </div>
+          </div>
+          <div class="innerCard">
+            <div class="academicGrid">
+              <div class="academicCard">
+                <h4>🎓 Education</h4>
+                <p>B.Tech Computer Science<br />2024 – 2028</p>
+              </div>
+              <div class="academicCard">
+                <h4>💼 Status</h4>
+                <p>Open to Internships</p>
+              </div>
+              <div class="academicCard">
+                <h4>🎨 Specialty</h4>
+                <p>Full‑Stack Dev</p>
+              </div>
+              <div class="academicCard">
+                <h4>🏆 LeetCode</h4>
+                <p><a href="https://leetcode.com/u/rewant2005/" target="_blank" rel="noopener"
+                    style="color:var(--accent);font-weight:700;">View Profile ↗</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="card reveal">
+        <span class="eyebrow"><span class="dot"></span> Skills</span>
+        <h2 class="secTitle">Programming Languages</h2>
+        <div class="skillGrid">
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="cpp.jpg" alt="C++" />
+            <div class="skillName">C++</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="python.png" alt="Python" />
+            <div class="skillName">Python</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="js.jpg" alt="JavaScript" />
+            <div class="skillName">JavaScript</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="c.png" alt="C" />
+            <div class="skillName">C</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="html.png" alt="HTML" />
+            <div class="skillName">HTML</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="css.png" alt="CSS" />
+            <div class="skillName">CSS</div>
+          </div>
+        </div>
+
+        <h2 class="secTitle" style="margin-top:36px;">Frameworks &amp; Libraries</h2>
+        <div class="skillGrid">
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=react" alt="React.js" />
+            <div class="skillName">React.js</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" />
+            <div class="skillName">Node.js</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=express" alt="Express.js" />
+            <div class="skillName">Express.js</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" />
+            <div class="skillName">MongoDB</div>
+          </div>
+        </div>
+
+        <h2 class="secTitle" style="margin-top:36px;">Tools &amp; Platforms</h2>
+        <div class="skillGrid">
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=git" alt="Git" />
+            <div class="skillName">Git</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=github" alt="GitHub" />
+            <div class="skillName">GitHub</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=figma" alt="Figma" />
+            <div class="skillName">Figma</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=vscode" alt="VS Code" />
+            <div class="skillName">VS Code</div>
+          </div>
+          <div class="skillCard tilt" data-tilt>
+            <img class="skillIcon" src="https://skillicons.dev/icons?i=vercel" alt="Vercel" />
+            <div class="skillName">Vercel</div>
+          </div>
+        </div>
+
+        <h2 class="secTitle" style="margin-top:36px;">Concepts</h2>
+        <div class="pillRow">
+          <span class="pill">Data Structures &amp; Algorithms</span>
+          <span class="pill">RESTful APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="card reveal">
+        <span class="eyebrow"><span class="dot"></span> Projects</span>
+        <h2 class="secTitle">Featured Projects</h2>
+        <div class="filters">
+          <button class="filterBtn active" data-filter="all" type="button">All</button>
+          <button class="filterBtn" data-filter="fullstack" type="button">Full‑Stack</button>
+          <button class="filterBtn" data-filter="python" type="button">Python / AI</button>
+          <button class="filterBtn" data-filter="frontend" type="button">Frontend</button>
+
+        </div>
+        <div class="projectsGrid">
+
+          <!-- Project 1 -->
+          <article class="project reveal tilt" data-tags="all fullstack" data-tilt
+            style="position: relative; overflow: hidden;">
+            <img class="projectImg" src="images/projects/Screenshot 2026-07-31 123726.png"
+              alt="NiveshCapital screenshot" />
+            <div class="projectHeader">
+              <h3>NiveshCapital</h3>
+            </div>
+            <div class="projectActions">
+              <a class="btn" href="https://niveshcapital.vercel.app/" target="_blank" rel="noopener">Live ↗</a>
+              <a class="btn" href="https://github.com/rewantritwik/niveshcapital" target="_blank" rel="noopener">GitHub
+                ↗</a>
+            </div>
+            <details style="margin-top: 16px;">
+              <summary class="btn btnPrimary"
+                style="width: 100%; justify-content: center; list-style: none; cursor: pointer;">View Project</summary>
+              <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--surface-card); padding: 24px; z-index: 10; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; border-radius: var(--radius);">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h3 style="margin: 0;">NiveshCapital</h3>
+                  <button type="button" class="btn" style="padding: 4px 10px; font-size: 12px;"
+                    onclick="this.closest('details').removeAttribute('open')">Close</button>
+                </div>
+                <p><b>Smart Investment Management</b><br />
+                  NiveshCapital is a full-stack financial platform that simplifies portfolio tracking, enabling
+                  individual investors to monitor assets, analyze market trends, and calculate returns, while providing
+                  wealth managers with comprehensive client dashboards—making wealth management more accessible,
+                  transparent, and efficient.</p>
+                <div>
+                  <div style="font-weight: 700; font-size: 13px; margin-bottom: 8px;">Tech Stack:</div>
+                  <div class="projectMeta">
+                    <span class="pill">React.js</span>
+                    <span class="pill">Node.js</span>
+                    <span class="pill">Express.js</span>
+                    <span class="pill">MongoDB Atlas</span>
+                    <span class="pill">JWT</span>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project reveal tilt" data-tags="all python" data-tilt
+            style="position: relative; overflow: hidden;">
+            <img class="projectImg" src="images/projects/image.png" alt="Float Chat screenshot" />
+            <div class="projectHeader">
+              <h3>Float Chat</h3>
+            </div>
+            <div class="projectActions">
+              <a class="btn" href="https://github.com/rewantritwik/floatchat" target="_blank" rel="noopener">GitHub
+                ↗</a>
+            </div>
+            <details style="margin-top: 16px;">
+              <summary class="btn btnPrimary"
+                style="width: 100%; justify-content: center; list-style: none; cursor: pointer;">View Project</summary>
+              <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--surface-card); padding: 24px; z-index: 10; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; border-radius: var(--radius);">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h3 style="margin: 0;">Float Chat</h3>
+                  <button type="button" class="btn" style="padding: 4px 10px; font-size: 12px;"
+                    onclick="this.closest('details').removeAttribute('open')">Close</button>
+                </div>
+                <p><b>AI-Powered Ocean Data Explorer</b><br />
+                  FloatChat is an innovative AI-powered conversational interface that transforms complex ARGO
+                  oceanographic data into intuitive, natural language queries. Built with modern technologies, it allows
+                  researchers, oceanographers, and data enthusiasts to explore ocean data through simple conversations,
+                  interactive visualizations, and intelligent insights.</p>
+                <div>
+                  <div style="font-weight: 700; font-size: 13px; margin-bottom: 8px;">Tech Stack:</div>
+                  <div class="projectMeta">
+                    <span class="pill">Python</span>
+                    <span class="pill">Flask</span>
+                    <span class="pill">PostgreSQL</span>
+                    <span class="pill">Streamlit</span>
+                    <span class="pill">Docker</span>
+                    <span class="pill">GitHub Actions</span>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- project 3 -->
+          <article class="project reveal tilt" data-tags="all frontend" data-tilt
+            style="position: relative; overflow: hidden;">
+            <img class="projectImg" src="images/projects/Screenshot 2026-07-31 124502.png" alt="Myntra screenshot" />
+            <div class="projectHeader">
+              <h3>Myntra</h3>
+            </div>
+            <div class="projectActions">
+              <a class="btn" href="https://myntra-clone-ashen.vercel.app" target="_blank" rel="noopener">Live ↗</a>
+              <a class="btn" href="https://github.com/rewantritwik/myntra-clone" target="_blank" rel="noopener">GitHub
+                ↗</a>
+            </div>
+            <details style="margin-top: 16px;">
+              <summary class="btn btnPrimary"
+                style="width: 100%; justify-content: center; list-style: none; cursor: pointer;">View Project</summary>
+              <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--surface-card); padding: 24px; z-index: 10; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; border-radius: var(--radius);">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h3 style="margin: 0;">Myntra</h3>
+                  <button type="button" class="btn" style="padding: 4px 10px; font-size: 12px;"
+                    onclick="this.closest('details').removeAttribute('open')">Close</button>
+                </div>
+                <p><b>Modern E-Commerce Experience</b><br />
+                  Myntra is a responsive storefront clone that replicates premium online shopping, enabling fashion
+                  enthusiasts to browse catalogs, view product details, and manage shopping carts, while providing
+                  digital merchants with a sleek UI template—making online retail more engaging, intuitive, and
+                  accessible.</p>
+                <div>
+                  <div style="font-weight: 700; font-size: 13px; margin-bottom: 8px;">Tech Stack:</div>
+                  <div class="projectMeta">
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+                    <span class="pill">JavaScript</span>
+                  </div>
+                </div>
+              </div>
+            </details>
+          </article>
+
+          <!-- project 34-->
+          <article class="project reveal tilt" data-tags="all frontend" data-tilt
+            style="position: relative; overflow: hidden;">
+            <img class="projectImg" src="images/projects/image copy.png" alt="strike screenshot" />
+            <div class="projectHeader">
+              <h3> Strike</h3>
+            </div>
+            <div class="projectActions">
+              <a class="btn" href="https://github.com/rewantritwik/strike" target="_blank" rel="noopener">GitHub
+                ↗</a>
+            </div>
+            <details style="margin-top: 16px;">
+              <summary class="btn btnPrimary"
+                style="width: 100%; justify-content: center; list-style: none; cursor: pointer;">View Project</summary>
+              <div
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--surface-card); padding: 24px; z-index: 10; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; border-radius: var(--radius);">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <h3 style="margin: 0;">Strike</h3>
+                  <button type="button" class="btn" style="padding: 4px 10px; font-size: 12px;"
+                    onclick="this.closest('details').removeAttribute('open')">Close</button>
+                </div>
+                <p><b>Eductional website</b><br />
+                  Strike is a fully responsive modern landing page built using HTML and CSS — no JavaScript required.It
+                  features a sleek UI, adaptive mobile design, interactive hover effects, and a clean, accessible
+                  structure.</p>
+                <div>
+                  <div style="font-weight: 700; font-size: 13px; margin-bottom: 8px;">Tech Stack:</div>
+                  <div class="projectMeta">
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+
+                  </div>
+                </div>
+              </div>
+            </details>
+          </article>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footerRow">
+      <span>© <span id="year"></span> Rewant Ritwik. Built with passion &amp; code.</span>
+      <span>Computer Science Student • Full‑Stack Developer</span>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="backToTop" id="backToTopBtn" aria-label="Scroll back to top" title="Back to top">
+    <svg viewBox="0 0 24 24">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
