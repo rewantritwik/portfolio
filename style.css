@@ -64,7 +64,6 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Theme */
   --bg: #0b0f19;
   --bg-subtle: #111827;
   --surface: #1e293b;
@@ -94,7 +93,6 @@
   --ring: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
-/* ─── Global Reset ───────────────────────────────────────── */
 *,
 *::before,
 *::after {
@@ -135,7 +133,6 @@ textarea {
   color: inherit;
 }
 
-/* ─── Scroll Progress Bar ───────────────────────────────── */
 #scrollProgress {
   position: fixed;
   top: 0;
@@ -147,7 +144,6 @@ textarea {
   transition: width 0.1s ease-out;
 }
 
-/* ─── Layout Container ───────────────────────────────────── */
 .container {
   width: min(var(--max-width), calc(100% - 36px));
   margin: 0 auto;
@@ -157,7 +153,6 @@ textarea {
   padding: clamp(40px, 5vw, 60px) 0;
 }
 
-/* ─── Navigation Bar ─────────────────────────────────────── */
 .nav {
   position: fixed;
   top: 0;
@@ -238,7 +233,6 @@ textarea {
   font-weight: 700;
 }
 
-/* Theme Switcher Button */
 .themeToggle {
   width: 40px;
   height: 40px;
@@ -270,7 +264,6 @@ textarea {
   stroke-linejoin: round;
 }
 
-/* Mobile Hamburger Menu */
 .hamburger {
   display: none;
   width: 40px;
@@ -337,7 +330,6 @@ textarea {
   background: var(--accent-light);
 }
 
-/* ─── Typography & Badges ────────────────────────────────── */
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -392,7 +384,6 @@ textarea {
   line-height: 1.75;
 }
 
-/* ─── Buttons ────────────────────────────────────────────── */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -439,7 +430,6 @@ textarea {
   margin-top: 20px;
 }
 
-/* ─── Cards ──────────────────────────────────────────────── */
 .card {
   background: var(--surface-card);
   border: 1px solid var(--border);
@@ -458,7 +448,6 @@ textarea {
   line-height: 1.8;
 }
 
-/* ─── HERO SECTION ───────────────────────────────────────── */
 .hero {
   padding: clamp(40px, 7vw, 80px) 0 32px;
 }
@@ -522,7 +511,6 @@ textarea {
   flex-wrap: wrap;
 }
 
-/* Hero Profile Card */
 .heroCard {
   background: var(--surface-card);
   border: 1px solid var(--border);
@@ -633,7 +621,6 @@ textarea {
   margin-top: 8px;
 }
 
-/* ─── ABOUT SECTION ──────────────────────────────────────── */
 .twoCol {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -674,7 +661,6 @@ textarea {
   line-height: 1.5;
 }
 
-/* ─── SKILLS SECTION ─────────────────────────────────────── */
 .skillGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -751,7 +737,6 @@ textarea {
   transform: translateY(-2px);
 }
 
-/* ─── PROJECTS SECTION ───────────────────────────────────── */
 .filters {
   display: flex;
   flex-wrap: wrap;
@@ -847,7 +832,6 @@ textarea {
   margin-top: auto;
 }
 
-/* ─── CONTACT SECTION ────────────────────────────────────── */
 .contactLayout {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -922,7 +906,6 @@ textarea {
   padding: 6px 12px;
 }
 
-/* Contact Form */
 .contactFormCol {
   display: flex;
   flex-direction: column;
@@ -964,7 +947,6 @@ textarea {
   min-height: 130px;
 }
 
-/* ─── FOOTER ─────────────────────────────────────────────── */
 footer {
   padding: 32px 0 44px;
   border-top: 1px solid var(--border);
@@ -985,7 +967,6 @@ footer {
   font-weight: 500;
 }
 
-/* Back to Top Floating Button */
 .backToTop {
   position: fixed;
   bottom: 28px;
@@ -1030,7 +1011,6 @@ footer {
   stroke-linejoin: round;
 }
 
-/* ─── TOAST NOTIFICATION ──────────────────────────────────── */
 .toast {
   position: fixed;
   right: 24px;
@@ -1060,7 +1040,6 @@ footer {
   pointer-events: auto;
 }
 
-/* ─── REVEAL ANIMATIONS ──────────────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -1084,7 +1063,6 @@ footer {
   }
 }
 
-/* ─── RESPONSIVE BREAKPOINTS ─────────────────────────────── */
 @media (max-width: 1024px) {
   .skillGrid {
     grid-template-columns: repeat(3, 1fr);
