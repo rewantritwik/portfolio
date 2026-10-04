@@ -303,9 +303,9 @@
           <article class="project reveal tilt" data-tags="all fullstack python" data-tilt
             style="position: relative; overflow: hidden;">
             <img class="projectImg" src="images/projects/Screenshot 2026-08-29 200427.png"
-              alt="AI Revenue Recovery screenshot" />
+              alt="AI Revenue Recovery Agent screenshot" />
             <div class="projectHeader">
-              <h3>AI Revenue Recovery</h3>
+              <h3>AI Revenue Recovery Agent</h3>
             </div>
             <div class="projectActions">
               <a class="btn" href="https://rewantritwik.github.io/ai-revenue-recovery/dashboard.html" target="_blank"
@@ -320,23 +320,30 @@
               <div
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: var(--surface-card); padding: 24px; z-index: 10; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; border-radius: var(--radius);">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <h3 style="margin: 0;">AI Revenue Recovery</h3>
+                  <h3 style="margin: 0;">AI Revenue Recovery Agent</h3>
                   <button type="button" class="btn" style="padding: 4px 10px; font-size: 12px;"
                     onclick="this.closest('details').removeAttribute('open')">Close</button>
                 </div>
                 <p><b>Policy-Bounded AI Recovery Engine</b><br />
-                  AI Revenue Recovery is a policy-bounded, human-gated AI engine that automatically detects, diagnoses,
-                  and recovers lost revenue from failed payment transactions, abandoned checkouts, and overdue invoices.
-                  Every action is bounded by strict safety guardrails — retry caps, monetary thresholds, and compliance
-                  windows — with high-risk cases escalated to humans with clear explanations.</p>
+                  A policy-bounded AI agent that detects failed payments, diagnoses root cause, and automatically recovers lost revenue — integrated live with Razorpay's real payment API.<br /><br />
+                  Businesses lose revenue quietly — declined payments, abandoned checkouts, failed subscriptions, overdue invoices. This agent detects each case, diagnoses the real root cause, and takes one pre-approved recovery action within hard safety limits (auto-retry, recovery link, or human escalation for fraud and edge cases). Every decision is logged with a stated reason, and the system is integrated with Razorpay's live test-mode APIs, not just simulated data.</p>
+                <div>
+                  <div style="font-weight: 700; font-size: 13px; margin-bottom: 6px;">Key Highlights:</div>
+                  <ul style="margin: 0; padding-left: 18px; font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+                    <li><b>Live Webhook Integration:</b> Real webhook integration with HMAC signature verification, not just synthetic data</li>
+                    <li><b>Battle-Tested:</b> 4 real bugs found &amp; fixed through live API testing (webhook payload gaps, SDK error handling, incorrect API assumptions, fraud-filter edge cases)</li>
+                    <li><b>Honest Dual-Metric Reporting:</b> Separates recoverable revenue from cases deliberately never auto-touched (fraud, severely overdue invoices)</li>
+                    <li><b>Self-Hosted Dashboard:</b> Fully offline-capable dashboard, self-hosted via GitHub Pages</li>
+                  </ul>
+                </div>
                 <div>
                   <div style="font-weight: 700; font-size: 13px; margin-bottom: 8px;">Tech Stack:</div>
-                  <div class="projectMeta">
-                    <span class="pill">HTML</span>
-                    <span class="pill">CSS</span>
-                    <span class="pill">JavaScript</span>
-                    <span class="pill">Chart.js</span>
+                  <div class="projectMeta" style="margin-bottom: 0;">
+                    <span class="pill">Node.js</span>
+                    <span class="pill">Express</span>
                     <span class="pill">Razorpay API</span>
+                    <span class="pill">Chart.js</span>
+                    <span class="pill">Webhooks (HMAC)</span>
                   </div>
                 </div>
               </div>
